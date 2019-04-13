@@ -27,7 +27,5 @@ class ReadEbook:
         return self.list
 
 
-
-
 if __name__ == '__main__':
     app.run()
