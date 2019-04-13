@@ -3,6 +3,8 @@ from mobi import Mobi
 import os
 from save_file import Files
 from flask import Flask, request, render_template
+from flask import send_file
+
 
 app = Flask(__name__)
 
@@ -11,6 +13,12 @@ def my_form():
     r = ReadEbook()
     r.read_file("ebook_list.txt")
     return render_template('index.html', list = r.list)
+
+
+@app.route('/download')
+def downloadFile ():
+    path = "ebook_list.txt"
+    return send_file(path, as_attachment=True)
 
 
 
