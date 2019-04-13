@@ -9,7 +9,7 @@ app = Flask(__name__)
 @app.route('/')
 def my_form():
     r = ReadEbook()
-    r.read_file("ebook_list.txt")
+    r.read_file("/ebook_list.txt")
     return render_template('index.html', list = r.list)
 
 
