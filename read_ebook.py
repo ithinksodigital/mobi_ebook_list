@@ -4,8 +4,8 @@ from save_file import Files
 import os
 
 class ListEbook():
-    def __init__(self, path):
-        self.path = path
+    def __init__(self, path_to_folder):
+        self.path = path_to_folder
         files = []
         for r, d, f in os.walk(self.path):
             for file in f:
@@ -34,4 +34,4 @@ class ListEbook():
                 print("pass", f)
 
 
-l = ListEbook("path/to/mobi")
+l = ListEbook("path_to_folder")
