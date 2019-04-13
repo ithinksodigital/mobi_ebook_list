@@ -4,4 +4,4 @@
 https://radibooks.herokuapp.com/
 
 
-script looking for *.mobi in choosen directory, read title & author and return as list in flask app. 
+script looking for *.mobi files in choosen directory, read title & author then return as txt doc & list in flask app. 
