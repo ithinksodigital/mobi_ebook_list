@@ -15,6 +15,11 @@ def my_form():
     return render_template('index.html', list = r.list)
 
 
+
+@app.route('/', methods=['POST'])
+def add_book():
+    pass
+
 @app.route('/download')
 def downloadFile ():
     path = "ebook_list.txt"
